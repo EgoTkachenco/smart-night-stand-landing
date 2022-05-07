@@ -1,0 +1,53 @@
+.text-field {
+  padding: 0 22px;
+  width: 398px;
+  height: 52px;
+  background: #ffffff;
+  border: 1px solid #cfd3e9;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn {
+  background: #455eb1;
+  border-radius: 10px;
+  width: 320px;
+  height: 64px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #616ede;
+}
+.btn:active {
+  background: #616ede;
+  transform: scale(0.95);
+}
+.btn:disabled {
+  opacity: 0.5;
+}
+body {
+  background-color: #a6a9b7;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+@media (max-width: 720px) {
+  .text-field {
+    max-width: 398px;
+    width: 100%;
+  }
+  .btn {
+    max-width: 320px;
+    width: 100%;
+  }
+}
