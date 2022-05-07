@@ -4,7 +4,11 @@ export default function Navigation() {
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <img src="/logo.svg" alt="Logo" className="nav__logo" />
+        <img
+          src={`${process.env.BACKEND_URL}/logo.svg`}
+          alt="Logo"
+          className="nav__logo"
+        />
 
         <button className="nav-btn" onClick={() => setOpen(!open)}>
           <svg

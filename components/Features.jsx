@@ -54,19 +54,19 @@ const renderPic = (i) => (
   <picture>
     <source
       media="(max-width: 360px)"
-      srcSet={`/images/features/table${i}_mob.png`}
+      srcSet={`${process.env.BACKEND_URL}/images/features/table${i}_mob.png`}
     />
     <source
       media="(max-width: 960px)"
-      srcSet={`/images/features/table${i}md.png`}
+      srcSet={`${process.env.BACKEND_URL}/images/features/table${i}md.png`}
     />
     <source
       media="(min-width: 960px)"
-      srcSet={`/images/features/table${i}xl.png`}
+      srcSet={`${process.env.BACKEND_URL}/images/features/table${i}xl.png`}
     />
     <img
       className="feature__img"
-      src={`/images/features/table${i}xl.png`}
+      src={`${process.env.BACKEND_URL}/images/features/table${i}xl.png`}
       alt="feature__img"
     />
   </picture>

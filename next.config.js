@@ -5,11 +5,10 @@ const nextConfig = {
   exportPathMap: function () {
     return {
       '/': { page: '/' },
-      '/ap-grid-layout': { page: '/ap-grid-layout' },
     }
   },
   assetPrefix: !debug
-    ? 'https://anotherplanet-io.github.io/Next-React-Components/'
+    ? 'https://egotkachenco.github.io/smart-night-stand-landing/'
     : '',
 }
 
