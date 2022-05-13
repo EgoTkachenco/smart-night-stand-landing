@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <div className="features-block">
+    <div className="features-block" id="features">
       <div className="features-block__title">FEATURES</div>
       <div className="features-block__subtitle">
         The TOOBLE is feature-packed side table designed for modern home

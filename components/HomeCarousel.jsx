@@ -29,7 +29,7 @@ export default function HomeCarousel() {
 }
 
 const renderPic = (name) => (
-  <picture className="carousel__item">
+  <picture className="carousel__item" id="carousel">
     <source
       media="(max-width: 360px)"
       srcSet={`${process.env.BACKEND_URL}/images/${name}-sm.png`}

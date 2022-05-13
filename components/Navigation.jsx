@@ -42,10 +42,10 @@ export default function Navigation() {
         </button>
 
         <div className="nav-content">
-          <a href="#">features</a>
-          <a href="#">how it looks</a>
-          <a href="#">models</a>
-          <a href="#">signup</a>
+          <a href="#features">features</a>
+          <a href="#carousel">how it looks</a>
+          <a href="#models">models</a>
+          <a href="#signup">signup</a>
         </div>
 
         <MobileMenu show={open} close={() => setOpen(false)} />
@@ -93,10 +93,10 @@ const MobileMenu = ({ show, close }) => {
           </svg>
         </button>
       </div>
-      <a href="#">features</a>
-      <a href="#">how it looks</a>
-      <a href="#">models</a>
-      <a href="#">signup</a>
+      <a href="#features">features</a>
+      <a href="#carousel">how it looks</a>
+      <a href="#models">models</a>
+      <a href="#signup">signup</a>
 
       <form className="nav-menu-form" onSubmit={onSubmit}>
         <input

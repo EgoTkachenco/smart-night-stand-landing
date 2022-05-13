@@ -1,6 +1,6 @@
 export default function HomeSpecification() {
   return (
-    <div className="home-specification">
+    <div className="home-specification" id="models">
       <div className="card">
         <div className="specification__title">Specification</div>
         <div className="specification-block">
