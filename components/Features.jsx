@@ -5,10 +5,13 @@ export default function Features() {
       <div className="features-block__subtitle">
         The TOOBLE is feature-packed side table designed for modern home
       </div>
-      <div className="feature">
+      <div className="feature" id="illuminate">
         {renderPic(1)}
         <div className="feature-content">
-          <div className="feature__title">{SVG_1}</div>
+          <div className="feature__title">
+            illuminate
+            {/* {SVG_1} */}
+          </div>
           <div className="feature__list-item">
             <span>1</span> Folding built-in lamp
           </div>
@@ -21,9 +24,12 @@ export default function Features() {
         </div>
       </div>
 
-      <div className="feature">
+      <div className="feature" id="organize">
         <div className="feature-content">
-          <div className="feature__title">{SVG_2}</div>
+          <div className="feature__title">
+            organize
+            {/* {SVG_2} */}
+          </div>
           <div className="feature__list-item">
             <span>4</span> 8 x 8 inch drawer and collapsible shelf
           </div>
@@ -34,10 +40,13 @@ export default function Features() {
         {renderPic(2)}
       </div>
 
-      <div className="feature">
+      <div className="feature" id="charge">
         {renderPic(3)}
         <div className="feature-content">
-          <div className="feature__title">{SVG_3}</div>
+          <div className="feature__title">
+            charge
+            {/* {SVG_3} */}
+          </div>
           <div className="feature__list-item">
             <span>6</span> 2 USB ports
           </div>
@@ -52,7 +61,7 @@ export default function Features() {
 
 const renderPic = (i) => (
   <picture>
-    <source
+    {/* <source
       media="(max-width: 360px)"
       srcSet={`${process.env.BACKEND_URL}/images/features/table${i}_mob.png`}
     />
@@ -63,10 +72,10 @@ const renderPic = (i) => (
     <source
       media="(min-width: 960px)"
       srcSet={`${process.env.BACKEND_URL}/images/features/table${i}xl.png`}
-    />
+    /> */}
     <img
-      className="feature__img"
-      src={`${process.env.BACKEND_URL}/images/features/table${i}xl.png`}
+      className={`feature__img img-nth-${i}`}
+      src={`${process.env.BACKEND_URL}/images/tables/table-${i}.png`}
       alt="feature__img"
     />
   </picture>

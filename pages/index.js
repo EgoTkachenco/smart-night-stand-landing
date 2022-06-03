@@ -18,35 +18,13 @@ export default function Home() {
         <link rel="icon" href={`${process.env.BACKEND_URL}/favicon.ico`} />
       </Head>
 
-      <picture>
-        <source
-          media="(max-width: 400px)"
-          srcSet={`${process.env.BACKEND_URL}/images/header-xs.png`}
-        />
-        <source
-          media="(max-width: 960px)"
-          srcSet={`${process.env.BACKEND_URL}/images/header-sm.png`}
-        />
-        <source
-          media="(max-width: 1280px)"
-          srcSet={`${process.env.BACKEND_URL}/images/header-md.png`}
-        />
-        <source
-          media="(min-width: 1280px)"
-          srcSet={`${process.env.BACKEND_URL}/images/header-lg.png`}
-        />
-        <img
-          className="header-back"
-          src={`${process.env.BACKEND_URL}/images/header-lg.png`}
-          alt="header-back"
-        />
-      </picture>
-
       <Navigation />
 
-      <HomeHeader />
+      <div className="pos-relative">
+        <HomeHeader />
 
-      <HomeAdvantages />
+        <HomeAdvantages />
+      </div>
 
       <Features />
 

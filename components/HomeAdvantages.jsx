@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 export default function HomeAdvantages() {
   return (
     <div className="advantages">
-      <div className="card">
+      <a className="card" href="#illuminate">
         <div className="card-top">
           <img
             src={`${process.env.BACKEND_URL}/icons/illuminate.svg`}
@@ -11,8 +12,8 @@ export default function HomeAdvantages() {
           ILLUMINATE
         </div>
         <p>Folding built-in lamp to brighten-up your space</p>
-      </div>
-      <div className="card">
+      </a>
+      <a className="card" href="#organize">
         <div className="card-top">
           <img
             src={`${process.env.BACKEND_URL}/icons/organize.svg`}
@@ -22,8 +23,8 @@ export default function HomeAdvantages() {
           ORGANIZE
         </div>
         <p>Collapsible design with smart cable management system</p>
-      </div>
-      <div className="card">
+      </a>
+      <a className="card" href="#charge">
         <div className="card-top">
           <img
             src={`${process.env.BACKEND_URL}/icons/charge.svg`}
@@ -33,7 +34,7 @@ export default function HomeAdvantages() {
           CHARGE
         </div>
         <p>2 USB ports and wireless charger</p>
-      </div>
+      </a>
     </div>
   )
 }

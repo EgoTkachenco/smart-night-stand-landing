@@ -1,4 +1,5 @@
 import { useEmailForm } from '../util'
+import HeaderBack from './HeaderBack'
 
 export default function HomeHeader() {
   const [send, pending, error] = useEmailForm()
@@ -9,6 +10,7 @@ export default function HomeHeader() {
   }
   return (
     <header className="header">
+      <HeaderBack />
       <div className="header-inner">
         <div className="header-left">
           <h1>A side table every modern home should have</h1>

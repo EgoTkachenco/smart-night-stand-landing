@@ -1,5 +1,12 @@
-@import './features';
-@import './home-carousel';
-@import './home-specification';
-@import './home-form';
-@import './navigation.scss';
+$c-dark: #19191b;
+
+html {
+  font-size: 0.83vw;
+}
+
+@import './blocks/home-page';
+@import './blocks/features';
+@import './blocks/home-carousel';
+@import './blocks/home-specification';
+@import './blocks/home-form';
+@import './blocks/navigation';

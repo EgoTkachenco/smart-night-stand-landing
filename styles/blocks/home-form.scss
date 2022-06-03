@@ -1,5 +1,5 @@
 .home-form {
-  background: #474f6a;
+  // background: #474f6a;
   padding: 36px 0 117px;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
     font-size: 36px;
     line-height: 44px;
     text-align: center;
-    color: #ffffff;
+    color: $c-dark;
     margin-bottom: 9px;
 
     @media (max-width: 720px) {
@@ -26,7 +26,7 @@
     font-size: 21px;
     line-height: 30px;
     text-align: center;
-    color: #ffffff;
+    color: $c-dark;
     margin-bottom: 62px;
     @media (max-width: 720px) {
       font-size: 18px;

@@ -11,7 +11,7 @@
 }
 
 .btn {
-  background: #455eb1;
+  background: #000000;
   border-radius: 10px;
   width: 320px;
   height: 64px;
@@ -35,7 +35,7 @@
   opacity: 0.5;
 }
 body {
-  background-color: #a6a9b7;
+  background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   min-width: 320px;

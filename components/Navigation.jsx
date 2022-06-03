@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from 'react'
 import { useEmailForm } from '../util'
 
@@ -7,7 +8,7 @@ export default function Navigation() {
     <nav className="nav">
       <div className="nav-inner">
         <img
-          src={`${process.env.BACKEND_URL}/logo.svg`}
+          src={`${process.env.BACKEND_URL}/logo-dark.svg`}
           alt="Logo"
           className="nav__logo"
         />
@@ -22,19 +23,19 @@ export default function Navigation() {
           >
             <path
               d="M19 1H1"
-              stroke="white"
+              stroke="#19191B"
               strokeWidth="2"
               strokeLinecap="round"
             />
             <path
               d="M19 7H1"
-              stroke="white"
+              stroke="#19191B"
               strokeWidth="2"
               strokeLinecap="round"
             />
             <path
               d="M19 13H1"
-              stroke="white"
+              stroke="#19191B"
               strokeWidth="2"
               strokeLinecap="round"
             />
@@ -42,10 +43,10 @@ export default function Navigation() {
         </button>
 
         <div className="nav-content">
-          <a href="#features">features</a>
-          <a href="#carousel">how it looks</a>
-          <a href="#models">models</a>
-          <a href="#signup">signup</a>
+          <a href="#features">Features</a>
+          <a href="#carousel">How it looks</a>
+          <a href="#models">Models</a>
+          <a href="#signup">Signup</a>
         </div>
 
         <MobileMenu show={open} close={() => setOpen(false)} />

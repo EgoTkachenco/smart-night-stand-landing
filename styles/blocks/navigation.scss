@@ -1,7 +1,8 @@
 /* NAVIGATION */
 .nav {
   position: relative;
-  padding: 23px 0 0;
+  padding: 16px 0 0;
+  z-index: 100;
 }
 .nav-inner {
   max-width: 1200px;
@@ -10,6 +11,7 @@
   align-items: center;
 }
 .nav__logo {
+  width: 190px;
 }
 .nav-content {
   margin-left: auto;
@@ -68,7 +70,7 @@
   }
 }
 .nav-content a {
-  color: #fff;
+  color: $c-dark;
   text-decoration: none;
   margin-right: 32px;
   display: block;

@@ -1,5 +1,5 @@
 .home-specification {
-  background: #474f6a;
+  // background: #474f6a;
   padding: 70px 0;
   @media (max-width: 960px) {
     padding: 30px 24px;
@@ -14,6 +14,7 @@
     padding: 62px 109px 62px 588px;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid #19191b;
 
     @media (max-width: 960px) {
       padding: 52px 92px;
