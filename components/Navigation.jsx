@@ -110,7 +110,9 @@ const MobileMenu = ({ show, close }) => {
         <button type="submit" className="btn" disabled={pending}>
           Sign up now to access
         </button>
-        <span>The Private Launch with a limited deal of 20% OFF.</span>
+        <span>
+          The Private Launch with a limited deal of 20% SPECIAL DISCCOUNT.
+        </span>
       </form>
     </div>
   )

@@ -22,7 +22,7 @@ export default function HomeCarousel() {
         >
           <div className="value" />
         </div>
-        <div className="label">LIVING ROOM</div>
+        <div className="label">BEDROOM</div>
       </div>
     </div>
   )

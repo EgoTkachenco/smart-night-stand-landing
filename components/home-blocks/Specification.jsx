@@ -5,8 +5,8 @@ export default function HomeSpecification() {
         <div className="specification__title">Specification</div>
         <div className="specification-block">
           <div className="specification__subtitle">DIMENSIONS</div>
-          <p>900*600*600 mm</p>
-          <p>36*24*24 in.</p>
+          <p>900*400*400 mm</p>
+          <p>36*16*16 in.</p>
         </div>
         <div className="specification-block">
           <div className="specification__subtitle">MATERIALS</div>
@@ -20,9 +20,18 @@ export default function HomeSpecification() {
           <span>standard EU power plug incl.</span>
         </div>
         <div className="specification-block">
-          <div className="specification__subtitle">OPTION</div>
-          <p>lorem ipsum dolor merit</p>
-          <p>123 456 !! option parametr</p>
+          <div className="specification__subtitle">Additional features</div>
+          <span>- alarm clock</span>
+          <span>- clock with a date</span>
+          <span>- PM2.5 air sensor</span>
+          <span>- CO2 air sensor</span>
+          <span>- temperature and moisture air sensor</span>
+          <span>
+            - additional shelf (with an increase in the height of the legs)
+          </span>
+          <span>- battery level </span>
+          <span>- wireless charging</span>
+          <span>- drawer (size 10*10*2.5 inch)</span>
         </div>
         <img
           src={`${process.env.BACKEND_URL}/images/table-4.png`}
@@ -31,10 +40,11 @@ export default function HomeSpecification() {
         />
         <div className="specification__subtitle">DESCRIPTION</div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, volutpat
-          proin ullamcorper in. Malesuada lacus, suspendisse pellentesque turpis
-          erat semper eu. Sed massa arcu, egestas ligula in accumsan. Amet,
-          donec ullamcorper aliquam ut enim.
+          The TOOBLE is a smart side table designed for your convenience and
+          comfort. Charge your devices with a wireless charger or through USB
+          ports with a clever cable management system. Use a foldable lamp for
+          your evening reading. Fine-tune it to your preference with adjustable
+          height legs and a configurable smart screen.
         </p>
 
         <img
