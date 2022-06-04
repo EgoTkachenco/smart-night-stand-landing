@@ -21,17 +21,15 @@ export default function HomeSpecification() {
         </div>
         <div className="specification-block">
           <div className="specification__subtitle">Additional features</div>
-          <span>- alarm clock</span>
-          <span>- clock with a date</span>
-          <span>- PM2.5 air sensor</span>
-          <span>- CO2 air sensor</span>
-          <span>- temperature and moisture air sensor</span>
-          <span>
-            - additional shelf (with an increase in the height of the legs)
-          </span>
-          <span>- battery level </span>
-          <span>- wireless charging</span>
-          <span>- drawer (size 10*10*2.5 inch)</span>
+          <p>- alarm clock</p>
+          <p>- clock with a date</p>
+          <p>- PM2.5 air sensor</p>
+          <p>- CO2 air sensor</p>
+          <p>- temperature and moisture air sensor</p>
+          <p>- additional shelf (with an increase in the height of the legs)</p>
+          <p>- battery level </p>
+          <p>- wireless charging</p>
+          <p>- drawer (size 10*10*2.5 inch)</p>
         </div>
         <img
           src={`${process.env.BACKEND_URL}/images/table-4.png`}
