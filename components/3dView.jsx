@@ -8,6 +8,10 @@ export default function ZdView() {
       console.log(error.message)
     }
   }, [])
+  const debug = process.env.NODE_ENV !== 'production'
+  const folderName = debug
+    ? '/table-360/'
+    : 'https://egotkachenco.github.io/smart-night-stand-landing/table-360/'
   return (
     <div
       className="cloudimage-360"

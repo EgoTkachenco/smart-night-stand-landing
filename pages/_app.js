@@ -4,6 +4,7 @@ import '../styles/global.css'
 import '../styles/index.scss'
 
 import Head from 'next/head'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,14 +15,18 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           type="text/css"
         />
-        <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/3.0.3/js-cloudimage-360-view.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
+      <Script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/3.0.3/js-cloudimage-360-view.min.js" />
       <Component {...pageProps} />
     </>
   )
