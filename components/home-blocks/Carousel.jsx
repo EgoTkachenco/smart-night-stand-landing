@@ -5,9 +5,9 @@ export default function HomeCarousel() {
 
   return (
     <div className="home-carousel">
-      <div className={`carousel ${isActive ? 'active' : ''}`}>
-        {renderPic('living-room')}
-        {renderPic('bedroom')}
+      <div className={`carousel ${isActive ? 'active' : ''}`} id="carousel">
+        <Slide name="living-room" />
+        <Slide name="bedroom" />
       </div>
       <div className="carousel__title">IN LIVING ROOM / IN BEDROOM</div>
       <div className="carousel__subtitle">
@@ -28,23 +28,25 @@ export default function HomeCarousel() {
   )
 }
 
-const renderPic = (name) => (
-  <picture className="carousel__item" id="carousel">
-    <source
-      media="(max-width: 360px)"
-      srcSet={`${process.env.BACKEND_URL}/images/${name}-sm.png`}
-    />
-    <source
-      media="(max-width: 960px)"
-      srcSet={`${process.env.BACKEND_URL}/images/${name}-md.png`}
-    />
-    <source
-      media="(min-width: 960px)"
-      srcSet={`${process.env.BACKEND_URL}/images/${name}.png`}
-    />
-    <img
-      src={`${process.env.BACKEND_URL}/images/features/${name}.png`}
-      alt="carousel__item"
-    />
-  </picture>
-)
+const Slide = ({ name }) => {
+  return (
+    <picture className="carousel__item">
+      <source
+        media="(max-width: 360px)"
+        srcSet={`${process.env.BACKEND_URL}/images/${name}-sm.png`}
+      />
+      <source
+        media="(max-width: 960px)"
+        srcSet={`${process.env.BACKEND_URL}/images/${name}-md.png`}
+      />
+      <source
+        media="(min-width: 960px)"
+        srcSet={`${process.env.BACKEND_URL}/images/${name}.png`}
+      />
+      <img
+        src={`${process.env.BACKEND_URL}/images/features/${name}.png`}
+        alt="carousel__item"
+      />
+    </picture>
+  )
+}

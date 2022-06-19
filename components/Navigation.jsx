@@ -43,10 +43,10 @@ export default function Navigation() {
         </button>
 
         <div className="nav-content">
-          <a href="#features">Features</a>
-          <a href="#carousel">How it looks</a>
-          <a href="#models">Models</a>
-          <a href="#signup">Signup</a>
+          <a href="#features">FEATURES</a>
+          <a href="#carousel">HOW IT LOOKS</a>
+          <a href="#models">MODELS</a>
+          <a href="#signup">SIGNUP</a>
         </div>
 
         <MobileMenu show={open} close={() => setOpen(false)} />
@@ -94,10 +94,18 @@ const MobileMenu = ({ show, close }) => {
           </svg>
         </button>
       </div>
-      <a href="#features">features</a>
-      <a href="#carousel">how it looks</a>
-      <a href="#models">models</a>
-      <a href="#signup">signup</a>
+      <a href="#features" onClick={close}>
+        FEATURES
+      </a>
+      <a href="#carousel" onClick={close}>
+        HOW IT LOOKS
+      </a>
+      <a href="#models" onClick={close}>
+        MODELS
+      </a>
+      <a href="#signup" onClick={close}>
+        SIGNUP
+      </a>
 
       <form className="nav-menu-form" onSubmit={onSubmit}>
         <input
@@ -110,9 +118,7 @@ const MobileMenu = ({ show, close }) => {
         <button type="submit" className="btn" disabled={pending}>
           Sign up now to access
         </button>
-        <span>
-          The Private Launch with a limited deal of 20% SPECIAL DISCCOUNT.
-        </span>
+        <span>The Private Launch with a limited deal of SPECIAL DISCOUNT.</span>
       </form>
     </div>
   )

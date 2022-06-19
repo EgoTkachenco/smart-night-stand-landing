@@ -1,6 +1,6 @@
 import { useEmailForm } from '../../util'
-import HeaderBack from './HeaderBack'
 import Advandages from './Advantages'
+import D3View from '../3dView'
 
 export default function Header() {
   const [send, pending, error] = useEmailForm()
@@ -12,7 +12,6 @@ export default function Header() {
   return (
     <div className="pos-relative">
       <header className="header">
-        <HeaderBack />
         <div className="header-inner">
           <div className="header-left">
             <h1>The side table every modern home should have</h1>
@@ -32,10 +31,11 @@ export default function Header() {
                 Sign up now to access
               </button>
               <span>
-                The Private Launch with a limited deal of 20% SPECIAL DISCCOUNT.
+                The Private Launch with a limited deal of SPECIAL DISCCOUNT.
               </span>
             </form>
           </div>
+          <D3View />
         </div>
       </header>
       <Advandages />
