@@ -35,7 +35,7 @@ export default function Header() {
               </span>
             </form>
           </div>
-          <D3View />
+          <D3View type="header" />
         </div>
       </header>
       <Advandages />

@@ -1,3 +1,5 @@
+import D3View from '../3dView'
+
 export default function Features() {
   return (
     <div className="features-block" id="features">
@@ -6,7 +8,8 @@ export default function Features() {
         The TOOBLE is feature-packed side table designed for modern home
       </div>
       <div className="feature" id="illuminate">
-        {renderPic(1)}
+        {/* {renderPic(1)} */}
+        <D3View type="table-1" className="feature__img img-nth-1" />
         <div className="feature-content">
           <div className="feature__title">
             illuminate
@@ -40,11 +43,16 @@ export default function Features() {
             <span>6</span> Additional shelf
           </div>
         </div>
-        {renderPic(2)}
+        {/* {renderPic(2)} */}
+        <D3View type="table-2" className="feature__img img-nth-2" />
       </div>
 
       <div className="feature" id="charge">
-        {renderPic(3)}
+        <img
+          className="feature__img img-nth-3"
+          src={`${process.env.BACKEND_URL}/images/tables/table-3.png`}
+          alt="feature__img"
+        />
         <div className="feature-content">
           <div className="feature__title">
             charge
@@ -76,11 +84,6 @@ const renderPic = (i) => (
       media="(min-width: 960px)"
       srcSet={`${process.env.BACKEND_URL}/images/features/table${i}xl.png`}
     /> */}
-    <img
-      className={`feature__img img-nth-${i}`}
-      src={`${process.env.BACKEND_URL}/images/tables/table-${i}.png`}
-      alt="feature__img"
-    />
   </picture>
 )
 

@@ -12,7 +12,7 @@ export default function HomeForm() {
     <div className="home-form" id="signup">
       <div className="form__title">Sign up to access</div>
       <div className="form__subtitle">
-        The Private Launch with a limited deal of 20% SPECIAL DISCCOUNT.
+        The Private Launch with a limited deal of SPECIAL DISCCOUNT.
       </div>
 
       <form onSubmit={onSubmit}>

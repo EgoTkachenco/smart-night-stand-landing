@@ -1,20 +1,47 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
-export default function ZdView() {
+export default function ZdView({ type, className }) {
+  const [state, setState] = useState({
+    folder: null,
+    inited: false,
+  })
+
   useEffect(() => {
-    try {
-      if (window) window.CI360.init()
-    } catch (error) {
-      console.log(error.message)
+    switch (type) {
+      case 'header':
+        setState({
+          ...state,
+          folder: process.env.BACKEND_URL + '/table-360/',
+          amount: '299',
+        })
+        break
+      case 'table-1':
+        setState({
+          ...state,
+          folder: process.env.BACKEND_URL + '/table-2-360/',
+          amount: '153',
+        })
+        break
+      case 'table-2':
+        setState({
+          ...state,
+          folder: process.env.BACKEND_URL + '/table-3-360/',
+          amount: '199',
+        })
+        break
+      default:
+        break
     }
-  }, [])
-  const folderName = process.env.BACKEND_URL + '/table-360/'
+  }, [type])
+
+  if (!state.folder) return null
+
   return (
     <div
-      className="cloudimage-360"
-      data-folder={folderName}
+      className={`cloudimage-360 ${className || ''}`}
+      data-folder={state.folder}
       data-filename-x="360-{index}.png"
-      data-amount-x="299"
+      data-amount-x={state.amount}
     />
   )
 }

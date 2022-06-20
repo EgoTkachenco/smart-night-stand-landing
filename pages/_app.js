@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import '../styles/reset.css'
 import '../styles/common.css'
 import '../styles/global.css'
@@ -7,6 +8,9 @@ import Head from 'next/head'
 import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    // if (window) window.CI360 = { notInitOnLoad: true }
+  }, [])
   return (
     <>
       <Head>

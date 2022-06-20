@@ -36,7 +36,7 @@ export default function HomeSpecification() {
           <span>- drawer (size 10*10*2.5 inch)</span>
         </div>
         <div className="specification__image">
-          <D3View />
+          <D3View type="header" />
         </div>
         {/* <img
           src={`${process.env.BACKEND_URL}/images/table-4.png`}
