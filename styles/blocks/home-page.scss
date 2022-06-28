@@ -51,6 +51,18 @@
 .header {
   padding-top: 100px;
   color: $c-dark;
+
+  #mc-embedded-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #mc-embedded-subscribe-form > .btn {
+    margin: 40px 0 12px;
+  }
+  #mc-embedded-subscribe-form > span {
+    color: $c-dark;
+  }
 }
 .header-inner {
   position: relative;
@@ -76,17 +88,6 @@
   font-size: 21px;
   line-height: 30px;
   margin: 0 0 40px 0;
-}
-.header-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.header-form > .btn {
-  margin: 40px 0 12px;
-}
-.header-form > span {
-  color: $c-dark;
 }
 
 @media (max-width: 1280px) {
@@ -130,7 +131,7 @@
     text-align: center;
     width: 534px;
   }
-  .header-form {
+  #mc-embedded-subscribe-form {
     align-items: center;
   }
   .header-form > span {
@@ -154,7 +155,7 @@
     font-size: 18px;
     line-height: 24px;
   }
-  .header-form span {
+  #mc-embedded-subscribe-form span {
     max-width: 250px;
   }
 }

@@ -11,21 +11,21 @@ export default function ZdView({ type, className }) {
       case 'header':
         setState({
           ...state,
-          folder: process.env.BACKEND_URL + '/table-360/',
+          folder: '/table-360/',
           amount: '299',
         })
         break
       case 'table-1':
         setState({
           ...state,
-          folder: process.env.BACKEND_URL + '/table-2-360/',
+          folder: '/table-2-360/',
           amount: '153',
         })
         break
       case 'table-2':
         setState({
           ...state,
-          folder: process.env.BACKEND_URL + '/table-3-360/',
+          folder: '/table-3-360/',
           amount: '199',
         })
         break

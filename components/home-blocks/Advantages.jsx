@@ -5,7 +5,7 @@ export default function HomeAdvantages() {
       <a className="card" href="#illuminate">
         <div className="card-top">
           <img
-            src={`${process.env.BACKEND_URL}/icons/illuminate.svg`}
+            src="/icons/illuminate.svg"
             alt="illuminate"
             className="card-top__logo"
           />
@@ -16,7 +16,7 @@ export default function HomeAdvantages() {
       <a className="card" href="#organize">
         <div className="card-top">
           <img
-            src={`${process.env.BACKEND_URL}/icons/organize.svg`}
+            src="/icons/organize.svg"
             alt="organize"
             className="card-top__logo"
           />
@@ -27,7 +27,7 @@ export default function HomeAdvantages() {
       <a className="card" href="#charge">
         <div className="card-top">
           <img
-            src={`${process.env.BACKEND_URL}/icons/charge.svg`}
+            src="/icons/charge.svg"
             alt="charge"
             className="card-top__logo"
           />

@@ -1,17 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react'
-import { useEmailForm } from '../util'
+import Form from './forms/DefaultForm'
 
 export default function Navigation() {
   const [open, setOpen] = useState(false)
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <img
-          src={`${process.env.BACKEND_URL}/logo-dark.svg`}
-          alt="Logo"
-          className="nav__logo"
-        />
+        <img src="/logo-dark.svg" alt="Logo" className="nav__logo" />
 
         <button className="nav-btn" onClick={() => setOpen(true)}>
           <svg
@@ -56,12 +52,6 @@ export default function Navigation() {
 }
 
 const MobileMenu = ({ show, close }) => {
-  const [send, pending, error] = useEmailForm()
-  const onSubmit = (e) => {
-    e.preventDefault()
-    send(e.target.children[0].value)
-    e.target.children[0].value = ''
-  }
   return (
     <div className={`nav-menu ${show ? 'active' : ''}`}>
       <div className="nav-menu-top">
@@ -106,8 +96,8 @@ const MobileMenu = ({ show, close }) => {
       <a href="#signup" onClick={close}>
         SIGNUP
       </a>
-
-      <form className="nav-menu-form" onSubmit={onSubmit}>
+      <Form />
+      {/* <form className="nav-menu-form" onSubmit={onSubmit}>
         <input
           type="email"
           className="text-field"
@@ -119,7 +109,7 @@ const MobileMenu = ({ show, close }) => {
           Sign up now to access
         </button>
         <span>The Private Launch with a limited deal of SPECIAL DISCOUNT.</span>
-      </form>
+      </form> */}
     </div>
   )
 }

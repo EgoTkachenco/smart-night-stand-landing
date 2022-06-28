@@ -1,14 +1,8 @@
-import { useEmailForm } from '../../util'
+import Form from '../forms/DefaultForm'
 import Advandages from './Advantages'
 import D3View from '../3dView'
 
 export default function Header() {
-  const [send, pending, error] = useEmailForm()
-  const onSubmit = (e) => {
-    e.preventDefault()
-    send(e.target.children[0].value)
-    e.target.children[0].value = ''
-  }
   return (
     <div className="pos-relative">
       <header className="header">
@@ -19,21 +13,7 @@ export default function Header() {
               Built with quality in mind and with features you actually need
             </p>
 
-            <form className="header-form" onSubmit={onSubmit}>
-              <input
-                type="email"
-                className="text-field"
-                placeholder="Email"
-                required
-              />
-              <span>{error}</span>
-              <button type="submit" className="btn" disabled={pending}>
-                Sign up now to access
-              </button>
-              <span>
-                The Private Launch with a limited deal of SPECIAL DISCCOUNT.
-              </span>
-            </form>
+            <Form />
           </div>
           <D3View type="header" />
         </div>
